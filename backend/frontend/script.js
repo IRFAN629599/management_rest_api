@@ -419,3 +419,11 @@ function showMessage(
 
 getStudents();
 // Frontend terintegrasi dengan REST API Student Management
+fetch('http://localhost:3000/api/siswa')
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });

@@ -40,7 +40,6 @@ Setiap data siswa memiliki:
 - jurusan
 - alamat
 
-Contoh:
 
 ```json
 {
