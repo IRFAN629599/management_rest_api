@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Management System</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Manajemen Data Siswa</p>
+    </header>
+
+    <main>
+
+        <section class="form-card">
+
+            <h2 id="formTitle">
+                Tambah Siswa
+            </h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="hidden"
+                    id="studentId"
+                >
+
+                <input
+                    type="text"
+                    id="nis"
+                    placeholder="NIS"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Nama"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Kelas"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="jurusan"
+                    placeholder="Jurusan"
+                    required
+                >
+
+                <textarea
+                    id="alamat"
+                    placeholder="Alamat"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Simpan
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelBtn"
+                    class="cancel"
+                    hidden
+                >
+                    Batal
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="table-card">
+
+            <div class="table-header">
+
+                <h2>Daftar Siswa</h2>
+
+                <button id="refreshBtn">
+                    Refresh
+                </button>
+
+            </div>
+
+            <div id="message"></div>
+
+            <div id="loading">
+                Memuat data...
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NIS</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Jurusan</th>
+                        <th>Alamat</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
