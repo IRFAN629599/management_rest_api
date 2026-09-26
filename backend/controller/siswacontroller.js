@@ -1,3 +1,4 @@
+// Controller untuk CRUD data siswa
 const db = require('../config/db');
 
 exports.getAllSiswa = async (req, res) => {
