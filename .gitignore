@@ -4,3 +4,5 @@ backend/.env
 .env.*
 !.env.example
 screenshots/*.mp4
+screenshots/*.mp4
+screenshots/*.mp4

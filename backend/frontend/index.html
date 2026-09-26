@@ -93,15 +93,30 @@
 
         <section class="table-card">
 
-            <div class="table-header">
+          <div class="table-header">
 
-                <h2>Daftar Siswa</h2>
+    <h2>Daftar Siswa</h2>
 
-                <button id="refreshBtn">
-                    Refresh
-                </button>
+    <button id="refreshBtn">
+        Refresh
+    </button>
 
-            </div>
+</div>
+
+<div class="filter-container">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔎 Cari nama atau NIS..."
+    >
+
+    <select id="kelasFilter">
+        <option value="">Semua Kelas</option>
+    </select>
+
+</div>
+
 
             <div id="message"></div>
 
