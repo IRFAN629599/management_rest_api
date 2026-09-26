@@ -1,5 +1,5 @@
 const express = require('express');
-
+// Route REST API untuk data siswa
 const router = express.Router();
 
 const siswaController = require('../controller/siswacontroller');
